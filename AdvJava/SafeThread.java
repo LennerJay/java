@@ -29,6 +29,8 @@ public class SafeThread {
 
 class Counter {
     int count;
+    // "synchronized" to make sure only one is being run 
+    //  this is for using threads
     public synchronized  void increment(){
         count++;
     }
