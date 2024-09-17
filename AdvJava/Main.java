@@ -42,7 +42,8 @@ enum Status{
     Running, Failed, Success
 }
 
-enum Fruits{
+enum Fruits {
+    
     Mango(20), Apple(22), Orange(15);
 
     int price;
@@ -59,5 +60,6 @@ enum Fruits{
         this.price = price;
     }
 
-
 }
+
+//if the constructor is initilised every static enum should have parameters[n is based on how many parameters / arguments]
