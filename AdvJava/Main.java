@@ -44,12 +44,18 @@ enum Status{
 
 enum Fruits {
     
-    Mango(20), Apple(22), Orange(15);
+    Mango(20), Apple(22), Orange(15), TEST("test");
 
     int price;
+    String temp;
+    Fruits(String t){
+        this.temp = t;
+        System.out.println(this.name());
+    }
 
     Fruits(int price) {
       this.price = price;
+      System.out.println(this.name());
     }
 
     public int getPrice() {
